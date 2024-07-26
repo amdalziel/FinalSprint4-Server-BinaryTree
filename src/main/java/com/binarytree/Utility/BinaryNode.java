@@ -1,16 +1,13 @@
-package com.binarytree.Model;
+package com.binarytree.Utility;
 
 public class BinaryNode {
 
     public int value;
     public BinaryNode left;
     public BinaryNode right;
-    public int height;
 
     public BinaryNode(int value) {
         this.value = value;
-        left = right = null;
+        this.left = this.right = null;
     }
-
-
 }
