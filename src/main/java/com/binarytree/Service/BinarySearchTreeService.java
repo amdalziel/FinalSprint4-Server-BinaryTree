@@ -23,7 +23,7 @@ public class BinarySearchTreeService {
         return (List<BinarySearchTree>) binarySearchTreeRepository.findAll();
     }
 
-    public BinarySearchTree addBinarySearchTree(ArrayList<Integer> userNumbers) {
+    public BinarySearchTree addBinarySearchTree(List<Integer> userNumbers) {
         BinarySearchTree newBST = new BinarySearchTree();
         for (int i = 0; i < userNumbers.size(); i++) {
             newBST.insert(userNumbers.get(i));
